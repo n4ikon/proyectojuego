@@ -36,30 +36,59 @@ public class MapaCargado extends Mapa{
 				switch ( pixeles[i] ) {
 				case  0xff959595:
 				     cuadrosCatalogo[i] = Cuadro.PISO1;
-				    continue;			    
+				    continue;
+				case 0xffff9000:
+						cuadrosCatalogo[i] = Cuadro.AUSTRAL1;
+						continue;
 				case 0xff930000:
-					cuadrosCatalogo[i] = Cuadro.AUSTRAL1;
-					continue;
-				case 0xfffc1000:
 					cuadrosCatalogo[i] = Cuadro.AUSTRAL2;
 					continue;
-				case 0xfffc0000:
+				case 0xfffc1000:
 					cuadrosCatalogo[i] = Cuadro.AUSTRAL3;
 					continue;
-				case 0xfffc4200:
+				case 0xfffc0000:
 					cuadrosCatalogo[i] = Cuadro.AUSTRAL4;
 					continue;
-				case 0xfffc6900:
-					cuadrosCatalogo[i]= Cuadro.AUSTRAL5;
+				case 0xfffc4200:
+					cuadrosCatalogo[i] = Cuadro.AUSTRAL5;
 					continue;
-				case 0xfffc7c00:
-					cuadrosCatalogo[i] = Cuadro.AUSTRAL6;
+				case 0xffffe647:
+					cuadrosCatalogo[i]= Cuadro.AUSTRAL6;
 					continue;
-				case 0xfffc9f00:
+				case 0xffFF8707:
 					cuadrosCatalogo[i] = Cuadro.AUSTRAL7;
 					continue;
-				case 0xfffccd00:
+				case 0xfffc6900:
 					cuadrosCatalogo[i] = Cuadro.AUSTRAL8;
+					continue;
+				case 0xfffc7C00:
+					cuadrosCatalogo[i] = Cuadro.AUSTRAL9;
+					continue;
+				case 0xfffc9f00:
+					cuadrosCatalogo[i] = Cuadro.AUSTRAL10;
+					continue;
+				case 0xfffccd00:
+					cuadrosCatalogo[i] = Cuadro.AUSTRAL11;
+					continue;
+				case 0xffF7FF2B:
+					cuadrosCatalogo[i] = Cuadro.AUSTRAL12;
+					continue;
+				case 0xffFF7700:
+					cuadrosCatalogo[i] = Cuadro.AUSTRAL13;
+					continue;
+				case 0xffFF6A00:
+					cuadrosCatalogo[i] = Cuadro.AUSTRAL14;
+				case 0xffFFC802:
+					cuadrosCatalogo[i] = Cuadro.AUSTRAL15;
+					continue;
+				case 0xffFFEE00:
+					cuadrosCatalogo[i] =Cuadro.AUSTRAL16;
+					continue;
+				case 0xffFFFA00:
+					cuadrosCatalogo[i] = Cuadro.AUSTRAL17;
+					continue;
+				case 0xffE7FF14:
+					cuadrosCatalogo[i] = Cuadro.AUSTRAL18;
 					continue;
 				case 0xff14009f:
 					cuadrosCatalogo[i] = Cuadro.ASFALTO;
@@ -75,6 +104,12 @@ public class MapaCargado extends Mapa{
 					continue;
 				case 0xff2AF74C:
 					cuadrosCatalogo[i] = Cuadro.ARBOL;
+					continue;
+                case 0xff051EFF:
+                    cuadrosCatalogo[i] = Cuadro.CRUCEROTADO;
+					continue;
+				case 0xff6393C2:
+					cuadrosCatalogo[i] = Cuadro.ENEMIGO;
 					continue;
 				default:
 					cuadrosCatalogo[i] = Cuadro.Vacio;

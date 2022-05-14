@@ -14,6 +14,7 @@ public  class Cuadro {
     public static final Cuadro Vacio = new Cuadro(Sprite.VACIO);
     public static final Cuadro CRUCE = new Cuadro(Sprite.CRUCE);
     public static final Cuadro ASFALTO = new Cuadro(Sprite.ASFALTO);
+    public static final Cuadro CRUCEROTADO = new Cuadro(Sprite.CRUCEROTADO);
     public static final Cuadro ARBOL = new Cuadro(Sprite.ARBOL);
     public static final Cuadro PARED1 = new Cuadro(Sprite.PARED1);
     public static final Cuadro AUTO = new Cuadro(Sprite.AUTO);
@@ -25,8 +26,19 @@ public  class Cuadro {
     public static final Cuadro AUSTRAL6 = new Cuadro(Sprite.AUSTRAL6);
     public static final Cuadro AUSTRAL7 = new Cuadro(Sprite.AUSTRAL7);
     public static final Cuadro AUSTRAL8 = new Cuadro(Sprite.AUSTRAL8);
+    public static final Cuadro AUSTRAL9 = new Cuadro(Sprite.AUSTRAL9);
+    public static final Cuadro AUSTRAL10 = new Cuadro(Sprite.AUSTRAL10);
+    public static final Cuadro AUSTRAL11 = new Cuadro(Sprite.AUSTRAL11);
+    public static final Cuadro AUSTRAL12 = new Cuadro(Sprite.AUSTRAL12);
+    public static final Cuadro AUSTRAL13 = new Cuadro(Sprite.AUSTRAL13);
+    public static final Cuadro AUSTRAL14 = new Cuadro(Sprite.AUSTRAL14);
+    public static final Cuadro AUSTRAL15 = new Cuadro(Sprite.AUSTRAL15);
+    public static final Cuadro AUSTRAL16 = new Cuadro(Sprite.AUSTRAL16);
+    public static final Cuadro AUSTRAL17 = new Cuadro(Sprite.AUSTRAL17);
+    public static final Cuadro AUSTRAL18 = new Cuadro(Sprite.AUSTRAL18);
     public static final Cuadro PISO1 = new Cuadro(Sprite.PISO1);
     public static final Cuadro PUPI = new Cuadro(Sprite.PUPI);
+    public static final Cuadro ENEMIGO = new Cuadro(Sprite.ENEMIGO);
     
     
     

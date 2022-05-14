@@ -1,5 +1,6 @@
 package graficos;
 
+import entes.criaturas.Jugardor;
 import mapa.cuadro.Cuadro;
 
 public final class Pantalla {
@@ -43,6 +44,28 @@ public final class Pantalla {
     		}
     	}
     	
+    }
+    public void mostrarJugador (int compensacionX , int compensacionY, Jugardor jugardor){
+        compensacionX -= diferenciaX;
+        compensacionY -= diferenciaY;
+        for(int y = 0; y <jugardor.obtenSprites().obtenLado(); y++) {
+            int posicionY = y + compensacionY;
+            for(int x = 0; x<jugardor.obtenSprites().obtenLado();x++) {
+                int posicionX = x + compensacionX;
+                if(posicionX < -jugardor.obtenSprites().obtenLado() || posicionX>= ancho
+                        || posicionY < 0 || posicionY >= alto){
+                    break;
+                }
+                if (posicionX < 0) {
+                    posicionX = 0;
+                }
+                //pixeles[posicionX + posicionY * ancho] = jugardor.obtenSprites().pixeles[x + y * jugardor.obtenSprites().obtenLado()];
+                int colorPixelJugador = jugardor.obtenSprites().pixeles[x + y * jugardor.obtenSprites().obtenLado()];
+                if (colorPixelJugador != 0xffff00ff ){
+                    pixeles[ posicionX + posicionY * ancho] = colorPixelJugador;
+                }
+            }
+        }
     }
     public void establecerDiferencia(final int diferenciaX, final int diferenciaY) {
     	this.diferenciaX = diferenciaX; 
